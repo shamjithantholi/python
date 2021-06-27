@@ -4,9 +4,7 @@ all: deps test build
 
 deps:
 	mkdir -p ./output
-	#pip3 install --upgrade -r requirements.txt
-	pip3 --version
-	whoami
+	pip3 install --upgrade -r requirements.txt
 	pipenv install
 
 test:
