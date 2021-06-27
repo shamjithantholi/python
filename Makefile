@@ -7,6 +7,9 @@ deps:
 	#pip3 uninstall -y pipenv
 	#pip3 install --upgrade -r requirements.txt
 	pip3 install -r requirements.txt
+	PYTHON_BIN_PATH="$(python3 -m site /var/lib/jenkins/.local/bin"
+        PATH="$PATH:$PYTHON_BIN_PATH"
+	
 	pipenv install
 
 test:
