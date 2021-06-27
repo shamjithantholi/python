@@ -4,8 +4,9 @@ all: deps test build
 
 deps:
 	mkdir -p ./output
-	pip3 uninstall -y pipenv
-	pip3 install --upgrade -r requirements.txt
+	#pip3 uninstall -y pipenv
+	#pip3 install --upgrade -r requirements.txt
+	pip3 install -r requirements.txt
 	pipenv install
 
 test:
