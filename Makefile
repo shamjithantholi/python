@@ -6,6 +6,7 @@ deps:
 	mkdir -p ./output
 	#pip3 install --upgrade -r requirements.txt
 	pip3 --version
+	whoami
 	pipenv install
 
 test:
