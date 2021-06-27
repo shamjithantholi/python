@@ -5,7 +5,9 @@ all: deps test build
 deps:
 	mkdir -p ./output
 	#pip3 install --upgrade -r requirements.txt
-	sudo -H pip install -U pipenv
+	pip3 install -U pipenv
+	PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
+	PATH="$PATH:$PYTHON_BIN_PATH"
 	pipenv install
 
 test:
