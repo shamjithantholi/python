@@ -5,7 +5,7 @@ all: deps test build
 deps:
 	mkdir -p ./output
 	pip3 install --upgrade -r requirements.txt
-	#pipenv install
+	pipenv install
 
 test:
 	nose2 -v --with-coverage --coverage takehome --coverage-report term-missing --coverage-report html tests 2>&1 | tee ./output/python-test.out
